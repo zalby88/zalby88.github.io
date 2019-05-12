@@ -1,10 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta charset="UTF-8"></meta>
-		<title>My Fancy CV</title>
+		<title>Alberto Lazzarin - Homepage</title>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="./stylesheets/myCvStylesheet.css" media="screen" />
-		<script type="text/javascript" src="script/myCvScript.js"></script>
 	</head>
 	<body>
 		<div class="myCV">
@@ -19,7 +18,7 @@
 							<!--
 							<span style="font-weight:normal;">My fancy CV and a little trip to HTML 5</span>
 							-->
-							<span style="font-weight:normal;">Computer Engineer</span>
+							<span style="font-weight:normal;">Software Engineer</span>
 						</hgroup>
 					</header>
 				</div>
@@ -340,26 +339,32 @@
 							<table style="width:95%;" class="computerSkillsBtnsPanel">
 								<tr>
 									<td>
-										<div class="button" onclick="AlbertoLazzarinCV.myFunctions.selectComkSkillsButton(this);" sectionToOpen="programmingSkills">
+										<div class="button" 
+											onclick="AlbertoLazzarinCV.myFunctions.selectCompSkillsButton(this);" 
+											data-zalbycv-section-to-open="programmingSkills">
 											<span>Programming</span>
 										</div>
 									</td>
 									
 									<td>
-										<div class="button" onclick="AlbertoLazzarinCV.myFunctions.selectComkSkillsButton(this);" sectionToOpen="webDesignSkills">
+										<div class="button" 
+											onclick="AlbertoLazzarinCV.myFunctions.selectCompSkillsButton(this);" 
+											data-zalbycv-section-to-open="webDesignSkills">
 											<span>Web Design</span>
 										</div>
 									</td>
 									
 									<td>
-										<div class="button" onclick="AlbertoLazzarinCV.myFunctions.selectComkSkillsButton(this);" sectionToOpen="dbmsSkills">
+										<div class="button" 
+											onclick="AlbertoLazzarinCV.myFunctions.selectCompSkillsButton(this);" 
+											data-zalbycv-section-to-open="dbmsSkills">
 											<span>DBMSs</span>
 										</div>
 									</td>
 								</tr>
 							</table>
 							<div>
-								<div id="programmingSkillsPanel" class="computerSkillsSection" hidden="true">
+								<div id="programmingSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
 											Deep knowledge of JAVA and good expertise in J2EE 
@@ -372,7 +377,7 @@
 										</li>
 									</ul>
 								</div>
-								<div id="webDesignSkillsPanel" class="computerSkillsSection" hidden="true">
+								<div id="webDesignSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
 											Good knowledge of HTML4, CSS2 and scripting languages (Javascript / AJAX and JQuery framework)
@@ -382,7 +387,7 @@
 										</li>
 									</ul>
 								</div>
-								<div id="dbmsSkillsPanel" class="computerSkillsSection" hidden="true">
+								<div id="dbmsSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
 											Good knowledge of Oracle SQL Developer 
@@ -431,5 +436,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Script Section -->
+		<script type="text/javascript" src="script/myCvScript.js"></script>
 	</body>
 </html>
