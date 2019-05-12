@@ -7,17 +7,16 @@
 	</head>
 	<body>
 		<div class="myCV">
-			<!-- MAIN PANEL -->
-			<div id="cvMainPanel" class="mainPanel" data-last-update="01-02-2016">
+			<div id="cvMainPanel" 
+				 class="mainPanel" 
+				 data-last-update="12-05-2019">
+				
 				<div id="headerContainer" class="headerSection">
 					<header>
 						<hgroup>
 							<span style="font-size:25px;">Alberto Lazzarin</span>
 						</hgroup>
 						<hgroup>
-							<!--
-							<span style="font-weight:normal;">My fancy CV and a little trip to HTML 5</span>
-							-->
 							<span style="font-weight:normal;">Software Engineer</span>
 						</hgroup>
 					</header>
@@ -26,7 +25,7 @@
 				<div class="spacer"/>
 				
 				<div class="accordion"> 
-					<div class="titleBox" onclick="AlbertoLazzarinCV.myFunctions.showHideAccordion('briefHistoryBox');" style="">
+					<div class="titleBox" onclick="AlbertoLazzarinCV.myFunctions.showHideAccordion('briefHistoryBox');">
 						<span style="">ABOUT ME</span>
 					</div>
 					<div id="briefHistoryBox" class="contentBox" hidden="true">
@@ -34,22 +33,37 @@
 							<div class="accordionArrow"/>
 						</div>
 						<div class="contentText">
-							
-								<p>
-									A self-motivated computer engineer, definitely looking for a solid career.
-								</p>
-								<p>
-									My commitment to study, combined with the challenging university program, helped me to develop strong mathematical and analytical skills.<br/>I took part to the most of team-working projects that were available at my university. These projects made me learn to develop complete and well-documented software while becoming familiar with JAVA, C, and C++ programming languages. Moreover my passion for technology pushed me to learn other languages on my own such as Python and some famous DBMSs (MySQL and MongoDB).
-								</p>
-								<p>
-									A month after my graduation I had been hired by one of the leading Consulting and System Integration companies in Italy. Immediately <a href="http://www.reply.eu/">Reply</a> introduced me to one of its main customers (<a href="https://www.linkedin.com/company/ubis">Unicredit Business Integrated Solutions</a>). By working inside the customer office in Verona, I had to deal with mixed teams, made of different external consulting companies. In this extremely competitive situation I had to learn as fast as possible the new technologies (mostly J2EE platform) used by the bank IT division in order to get ready to work on them while becoming familiar to develop for a complex enterprise application. Also, I had often been asked to do regression tests on programs developed by others, who were rarely available to help me, and fix them if necessary.
-								</p>
-								<p>
-									From March 2015 I've been moved to UBIS main office in Milano where I'm currently engaged in a frontend overhaul of the entire Internet Banking section with the use of IBM Portal technologies. This team-working project is managed through Scrum agile framework. 
-								</p>
-								<p>
-									Thanks to my broad preparation, to my habit to work always meticulously and to my last work experience I consider myself able to hold different positions related to software development and test.
-								</p>
+							<p>
+								Just a self-motivated Software Engineer, looking for a solid, yet dynamic career.
+								Able to hold different positions (Frontend developer, Integration/Middleware Engineer, Tester) thanks to a broad academic preparation and to the habit to work meticulously in contexts requiring self-directed learning skills.
+							</p>
+							<p>
+								My commitment to study, combined with the challenging university program, helped me to develop strong mathematical and analytical skills.
+								<br/>
+								By taking part to the most of team-working projects that were available at my university, 
+								I learnt to develop complete and well-documented software while becoming familiar with JAVA, C, and C++ programming languages. 
+								Moreover my passion for technology pushed me to learn other languages on my own, such as Python or DBMSs like MySQL and MongoDB.
+							</p>
+							<p>
+								A month after my graduation I had been hired by <a href="http://www.reply.eu/">Reply</a>, one of the leading Consulting and System Integration companies in Italy. 
+								Immediately I had been introduced to one of its main customers (<a href="https://www.linkedin.com/company/ubis">Unicredit Business Integrated Solutions</a>). 
+								By working inside the customer office in Verona, I had to deal with mixed teams, belonging to different external consulting companies. 
+								In this extremely competitive situation I had to learn as fast as possible the technologies adopted by the bank IT division (J2EE for most) in order to get ready to work on them while becoming familiar, for the fist time, to deal with a multilayered enterprise application. 
+								Also, I had often been asked to do regression tests, independently, on features developed by others as well as fix any bugs encountered during the process. 
+								This strongly challenged my ability in reverse engineering.
+							</p>
+							<p>
+								From March 2015 I had been moved to UBIS main office in Milano where I had been engaged in a frontend overhaul project for the entire Internet Banking section. 
+								As part of that, mastering <a href="https://www.ibm.com/marketplace/ibm-digital-experience">IBM Websphere Portal</a> technologies proved to be essential for delivering the new web application with the highest quality standards. 
+								Also, working in a Scrum-based team, gave me familiarity with the Agile approach. 
+							</p>
+							<p>
+								From March 2017 I have finally moved to the United Kingdom and started to work for <a href="https://www.bglgroup.co.uk/">BGL Group</a>.
+								Here I learnt most of the Extreme Programming methodologies like Test Driven Development and Pair/Mob Programming.
+								By being involved in a full re-engineering of the Policy Management web journey, 
+								I have integrated many of existing data layer procedures into a brand new, RESTful based, middleware layer.
+								This one is intended to be exposed as a set of public APIs.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -57,18 +71,100 @@
 				<div class="spacer"/>
 				
 				<div class="accordion"> 
-					<div class="titleBox" onclick="AlbertoLazzarinCV.myFunctions.showHideAccordion('professionalExperienceBox');" style="">
+					<div class="titleBox" onclick="AlbertoLazzarinCV.myFunctions.showHideAccordion('professionalExperienceBox');">
 						<span style="">PROFESSIONAL EXPERIENCE</span>
 					</div>
 					<div id="professionalExperienceBox" class="contentBox" hidden="true">
 						<div class="arrowContainer">
 							<div class="accordionArrow"/>
 						</div>
-						<div>
+						<div id="bglExperiencePanel">
 							<table style="width:100%; font-size: 18px;">
 								<tr>
 									<td style="width: 50%; text-align:left; font-weight:bold; color:black;">
-										<span>From November 2013</span>
+										<span>From March 2017</span>
+									</td>
+								
+									<td style="width: 50%; text-align:center;">
+										<div style="overflow: auto;">
+											<div style="float:left;">
+												<img src="img/bgl-group-logo.png" width="100" />
+											</div>
+											<div style="float:left; padding: 40px 25px;">
+												<span>Software Engineer at <b><a href="https://www.bglgroup.co.uk/">BGL Group</a></b></span>
+											</div>
+											<div style="clear:both;" />
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="spacer"/>
+							<div class="contentText">
+								<p>
+									<span style="text-decoration: underline; font-size: 16px;">Main Activities</span>:
+								</p>
+							</div>
+							<div class="contentText">
+								<p>As Integration Engineer in the​ ​Business Technology department...</p>
+								<ul>
+									<li>
+										Brand new middleware layer architecture design 
+									</li>
+									<li>
+										RESTful web services development with Design-First approach
+									</li>
+									<li>
+										Test-driven development 
+									</li>
+									<li>
+										Test Automation scripts configuration 
+									</li>
+									<li>
+										Scrum based teamwork with Pair-programming
+									</li>
+								</ul>
+							</div>
+							<div class="spacer light"/>
+							<div class="contentText">
+								<p>
+									<span style="text-decoration: underline; font-size: 16px;">Technologies</span>:
+								</p>
+							</div>
+							<div class="contentText">
+								<ul>
+									<li>
+										MuleSoft Anypoint Platfrom, Java 8 and Spring 
+									</li>
+									<li>
+										MUnit and JUnit as unit testing tools 
+									</li>
+									<li>
+										Postman as HTTP/REST Integration testing tool 
+									</li>
+									<li>
+										Javascript and ChaiJS for Test Automation scripts
+									</li>
+									<li>
+										Apache Maven as build automation tool 
+									</li>
+									<li>
+										Bamboo as continuous integration framework 
+									</li>
+									<li>
+										Jira as Agile Project Management tool 
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="spacer light" />
+						<div class="line-separator" />
+						<div class="spacer medium" />
+						<div id="replyExperiencePanel">
+							<table style="width:100%; font-size: 18px;">
+								<tr>
+									<td style="width: 50%; text-align:left; font-weight:bold; color:black;">
+										<span>From 2013 To 2017</span>
 									</td>
 								
 									<td style="width: 50%; text-align:center;">
@@ -77,7 +173,7 @@
 												<img src="img/technology-reply-logo.jpg" width="100" />
 											</div>
 											<div style="float:left; padding: 8px 25px;">
-												<span>IT Consultant at <b>Technology Reply</b> (<a href="http://www.reply.eu/">Reply Group</a>)</span>
+												<span>IT Consultant at <b>Technology Reply</b> (<b><a href="http://www.reply.eu/">Reply Group</a></b>)</span>
 											</div>
 											<div style="clear:both;" />
 										</div>
@@ -329,7 +425,7 @@
 				
 				<div class="accordion"> 
 					<div class="titleBox" onclick="AlbertoLazzarinCV.myFunctions.showHideAccordion('computerSkillsBox');" style="">
-						<span style="">COMPUTER SKILLS</span>
+						<span style="">TECHNICAL SKILLS</span>
 					</div>
 					<div id="computerSkillsBox" class="contentBox" hidden="true">
 						<div class="arrowContainer">
@@ -367,33 +463,33 @@
 								<div id="programmingSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
-											Deep knowledge of JAVA and good expertise in J2EE 
+											Expertise in JAVA and J2EE platform 
 										</li>
 										<li style="padding-top: 10px;">
-											Good command in Android SDK programming
+											Good command of Android SDK and Anypoint MuleSoft platform
 										</li>
 										<li style="padding-top: 10px;">
-											Intermendiate (mainly academic) skills in Python and C++
+											Intermediate (mainly academic) skills in Python and C++
 										</li>
 									</ul>
 								</div>
 								<div id="webDesignSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
-											Good knowledge of HTML4, CSS2 and scripting languages (Javascript / AJAX and JQuery framework)
+											Expertise in HTML, Java Server Pages/Faces and CSS and scripting languages (Javascript / AJAX and JQuery framework)
 										</li>
 										<li style="padding-top: 10px;">
-											Intermediate skills in AngularJS framework
+											Expertise in Javascript and libraries such as JQuery, Postman BDD (for automating testing), ReactJS
 										</li>
 									</ul>
 								</div>
 								<div id="dbmsSkills_panel" class="computerSkillsSection" hidden="true">
 									<ul>
 										<li style="padding-top: 10px;">
-											Good knowledge of Oracle SQL Developer 
+											Good command of Oracle SQL Developer 
 										</li>
 										<li style="padding-top: 10px;">
-											Intermendiate (mainly academic) skills in PostgreSQL, MySQL, MongoDB / NoSQL
+											Intermediate (mainly academic) skills in PostgreSQL, MySQL, MongoDB / NoSQL
 										</li>
 									</ul>
 								</div>
@@ -415,13 +511,16 @@
 						<div class="contentText">
 							<ul>
 								<li style="padding-top: 10px;">
-									<span>Good </span><span style="font-weight:bold;">communication skills</span><span> in an international environment gained during Erasmus experience</span> 
+									<span>Good </span><span style="font-weight:bold;">communication</span>
+									<span>skills, gained in different international environments and heterogeneous projects</span> 
 								</li>
 								<li style="padding-top: 10px;">
-									<span>Good </span><span style="font-weight:bold;">team-working skills</span><span> gained through academic projects during my university education and through my current experience in an Agile team</span>
+									<span>Good </span><span style="font-weight:bold;">team-working</span>
+									<span>skills, gained through my experience in both Waterfall and Agile teams</span>
 								</li>
 								<li style="padding-top: 10px;">
-									<span>Good </span><span style="font-weight:bold;">self-directed learning</span><span> skills developed during my professional experience, being forced to learn new technologies on my own in order to be productive as quickly as possible</span>
+									<span>Good </span><span style="font-weight:bold;">self-directed learning</span>
+									<span>skills, developed during my professional experience, being forced to learn new technologies on my own in order to be productive as quickly as possible</span>
 								</li>
 							</ul>
 						</div>
@@ -431,7 +530,7 @@
 				<div class="spacer"/>
 				<div id="footerContainer" class="footerSection">
 					<footer>
-						<small>2015 Alberto Lazzarin. Design still by Lassarin </small>
+						<small>2019 Alberto Lazzarin. Design by Lassarin </small>
 					</footer>
 				</div>
 			</div>

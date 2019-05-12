@@ -48,6 +48,16 @@
 	
 	.myCV .footerSection {
 		text-align:right;
+		width:100%;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	
+	.myCV .footerSection footer {
+		margin-right: 5%;
 	}
 	
 	.myCV .accordion .titleBox  {
@@ -67,7 +77,6 @@
 	
 	.myCV .accordion .titleBox  span{ 
 		font-size: 20px;
-		/* vertical-align: middle; */
 		line-height: 55px;
 	} 
 	

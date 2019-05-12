@@ -1,5 +1,5 @@
 var AlbertoLazzarinCV;
-if (AlbertoLazzarinCV == null) {
+if (!AlbertoLazzarinCV) {
 	AlbertoLazzarinCV = {};
 }
 
@@ -7,7 +7,7 @@ if (AlbertoLazzarinCV == null) {
 // UTILITY FUNCTIONS SETUP
 // ************************
 
-if (AlbertoLazzarinCV.myFunctions == null) {
+if (!AlbertoLazzarinCV.myFunctions) {
 	
 	//IIFE pattern
 	AlbertoLazzarinCV.myFunctions = (function () {
@@ -28,9 +28,9 @@ if (AlbertoLazzarinCV.myFunctions == null) {
 		
 		//Computer Skills private functions
 		let _hideComSkillsPanels = function() {
-			document.getElementById("programmingSkills" + _compSkillsPanelSuffix).setAttribute('hidden', true);
-			document.getElementById("webDesignSkills" + _compSkillsPanelSuffix).setAttribute('hidden', true);
-			document.getElementById("dbmsSkills" + _compSkillsPanelSuffix).setAttribute('hidden', true);
+			_hideElelementById("programmingSkills" + _compSkillsPanelSuffix);
+			_hideElelementById("webDesignSkills" + _compSkillsPanelSuffix);
+			_hideElelementById("dbmsSkills" + _compSkillsPanelSuffix);
 		};
 		
 		//**************
@@ -52,10 +52,8 @@ if (AlbertoLazzarinCV.myFunctions == null) {
 				_hideComSkillsPanels();
 				
 				//Open the corresponding section
-				let comSkillPanelToOpen = 
-					selectedComponent.getAttribute("data-zalbycv-section-to-open") + _compSkillsPanelSuffix;
-		
-				_showElelementById(comSkillPanelToOpen);
+				_showElelementById(
+					selectedComponent.getAttribute("data-zalbycv-section-to-open") + _compSkillsPanelSuffix);
 				
 				//Select only the button clicked
 				let elemParent = document.getElementById("computerSkillsBox");
