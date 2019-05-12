@@ -71,3 +71,30 @@ if (!AlbertoLazzarinCV.myFunctions) {
 		
 	})();//endof defining function
 }
+
+
+// ************************
+// PAGE COMPONENTS SETUP
+// ************************
+
+if (!AlbertoLazzarinCV.pageSetup) {
+	
+	//IIFE pattern
+	AlbertoLazzarinCV.pageSetup = function () {
+		
+		let _hideComponents = function() {
+			
+			let componentsToBeHidden = document.getElementsByClassName("startHidden");
+			for (let j = 0; j < componentsToBeHidden.length; j++) {
+				componentsToBeHidden[j].setAttribute("hidden", "true");
+			}
+		}
+		
+		_hideComponents();
+		
+		console.log("Setup complete");
+		
+	};//endof defining function
+}
+
+AlbertoLazzarinCV.pageSetup();
